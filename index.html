@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fit & Focused in Faith | Coming Soon</title>
     <meta name="description" content="Fit & Focused in Faith is a community dedicated to wellness and faith. Our full site is coming soon.">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body, html {
             height: 100%;
             margin: 0;
-            font-family: Arial, sans-serif;
-            color: white;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            color: #fff;
             overflow: hidden;
         }
 
@@ -27,37 +30,92 @@
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: 50px;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            font-weight: 100;
+            font-size: 5em;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            margin: 0;
+            animation: anim-text-flow 15s linear infinite;
+        }
+
+        .social-links {
+            margin-top: 40px;
         }
 
         .social-links a {
-            color: white;
-            margin: 0 15px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 10px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            color: #fff;
             text-decoration: none;
-            font-size: 24px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-            border-radius: 4px;
-            padding: 2px 4px;
+            font-size: 22px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
+        .social-links a:hover,
         .social-links a:focus-visible {
-            outline: 2px solid white;
-            outline-offset: 2px;
+            background-color: #fff;
+            color: #000;
+            outline: none;
+        }
+
+        @keyframes anim-text-flow {
+            0% {
+                color: #fff;
+                text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff;
+            }
+            25% {
+                color: #fff;
+                text-shadow: 0 0 10px #ff00b3, 0 0 20px #ff00b3, 0 0 40px #ff00b3;
+            }
+            50% {
+                color: #fff;
+                text-shadow: 0 0 10px #b3ff00, 0 0 20px #b3ff00, 0 0 40px #b3ff00;
+            }
+            75% {
+                color: #fff;
+                text-shadow: 0 0 10px #ffb300, 0 0 20px #ffb300, 0 0 40px #ffb300;
+            }
+            100% {
+                color: #fff;
+                text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em;
+                letter-spacing: 5px;
+            }
+            .social-links a {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 18px;
+            }
         }
     </style>
 </head>
 <body>
 
     <main class="hero">
-        <h1>Coming Soon</h1>
-        <div class="social-links">
-            <a href="https://www.facebook.com/groups/fitandfocusedinfaith2" target="_blank" rel="noopener noreferrer" aria-label="Join our Facebook group">Facebook</a>
-            <a href="https://www.instagram.com/fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">Instagram</a>
-            <a href="https://www.threads.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Threads">Threads</a>
-            <a href="https://www.tiktok.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">TikTok</a>
+        <div class="content">
+            <h1>Coming Soon</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com/groups/fitandfocusedinfaith2" target="_blank" rel="noopener noreferrer" aria-label="Join our Facebook group"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.threads.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Threads"><i class="fab fa-threads"></i></a>
+                <a href="https://www.tiktok.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
         </div>
     </main>
 
