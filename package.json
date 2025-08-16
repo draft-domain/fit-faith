@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "http-server -p 4173",
+    "lh:mobile": "lhci collect && lhci upload",
+    "lh:desktop": "lhci collect --settings.preset=desktop --settings.output=html && lhci upload",
+    "lh:autorun": "lhci autorun"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@lhci/cli": "^0.15.1"
+    "@lhci/cli": "^0.15.1",
+    "http-server": "^14.1.1"
   }
 }
