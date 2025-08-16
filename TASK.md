@@ -1,7 +1,7 @@
 # Tasks
 
 ## Active
-- Implement hero layout inspired by the CodePen (no code reuse without license).
+- Implement hero layout inspired by the CodePen.
 - Add “Coming Soon” headline + short tagline + verse ref (one line).
 - Add social links:
   - Facebook
@@ -9,7 +9,9 @@
   - Threads
   - TikTok
 - Make it responsive (desktop/tablet/mobile) with the single 1920×1080 image for now.
+- Use banner image from `/assets/images/banner-coming-soon.png` in hero section
 - Run HTML validate + link check + Lighthouse (live).
+
 
 ## Backlog
 - Get tablet/mobile banner variants from designer; wire <picture>.
