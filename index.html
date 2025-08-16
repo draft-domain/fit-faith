@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Fit & Focused in Faith | Coming Soon</title>
+    <meta name="description" content="Fit & Focused in Faith is a community dedicated to wellness and faith. Our full site is coming soon.">
     <style>
         body, html {
             height: 100%;
@@ -29,6 +30,7 @@
         .hero h1 {
             font-size: 50px;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .social-links a {
@@ -36,20 +38,28 @@
             margin: 0 15px;
             text-decoration: none;
             font-size: 24px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            padding: 2px 4px;
+        }
+
+        .social-links a:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 2px;
         }
     </style>
 </head>
 <body>
 
-    <div class="hero">
+    <main class="hero">
         <h1>Coming Soon</h1>
         <div class="social-links">
-            <a href="https://www.facebook.com/groups/fitandfocusedinfaith2" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://www.instagram.com/fitandfocusedinfaith" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.threads.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer">Threads</a>
-            <a href="https://www.tiktok.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://www.facebook.com/groups/fitandfocusedinfaith2" target="_blank" rel="noopener noreferrer" aria-label="Join our Facebook group">Facebook</a>
+            <a href="https://www.instagram.com/fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">Instagram</a>
+            <a href="https://www.threads.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Threads">Threads</a>
+            <a href="https://www.tiktok.com/@fitandfocusedinfaith" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">TikTok</a>
         </div>
-    </div>
+    </main>
 
 </body>
 </html>
