@@ -22,3 +22,16 @@
 - One task per change.
 - Keep files < 500 lines.
 - Update this README and TASK.md after changes.
+
+## Lighthouse CI
+- Local (mobile): start server `npx http-server -p 4173`, then `npm run lh:mobile`
+- Desktop (local): `npm run lh:desktop`
+- After deploy: set the Pages URL in `lighthouserc.json`, then `npm run lh:autorun`
+- Reports: see `lhci-reports/`
+- Example (live):
+  npm run lh:autorun -- --collect.url=https://draft-domain.github.io/fit-faith/
+
+
+## Design reference
+- Visual inspiration: https://codepen.io/itismowgli/pen/gjLJeE
+- We reimplemented the look to keep licensing clean. If we reuse code, we will add license/attribution here.

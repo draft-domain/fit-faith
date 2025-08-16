@@ -1,18 +1,25 @@
 # Tasks
 
 ## Active
-- Repo init + GitHub + Pages
-- Set up Cline workflows and MCP servers (done, verify)
-- Build responsive Coming Soon page
-- Add basic verification (HTML validate, link check)
+- Implement hero layout inspired by the CodePen (no code reuse without license).
+- Add “Coming Soon” headline + short tagline + verse ref (one line).
+- Add social links:
+  - Facebook
+  - Instagram
+  - Threads
+  - TikTok
+- Make it responsive (desktop/tablet/mobile) with the single 1920×1080 image for now.
+- Run HTML validate + link check + Lighthouse (live).
 
 ## Backlog
-- Ask designer for tablet/mobile banners
-- Add favicon and social meta (OG/Twitter)
-- Add Lighthouse check after Pages is live
+- Get tablet/mobile banner variants from designer; wire <picture>.
+- Add favicon + social meta (OG/Twitter).
+- Add accessibility pass (contrast check, focus order).
+- Add brand logo mark if provided.
+- If any external code is reused, add attribution section in README.
 
 ## Discovered During Work
-- (add items here as you find them)
+- (fill after runs)
 
 ## Done
-- (move finished items here)
+- (move items as we finish)
