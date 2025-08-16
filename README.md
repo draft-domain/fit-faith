@@ -35,3 +35,6 @@
 ## Design reference
 - Visual inspiration: https://codepen.io/itismowgli/pen/gjLJeE
 - We reimplemented the look to keep licensing clean. If we reuse code, we will add license/attribution here.
+
+## Known Issues
+- The Facebook group link (`https://www.facebook.com/groups/fitandfocusedinfaith2`) returns a `400 Bad Request` error when checked with `linkinator`. This may be because the group is private and requires a login to view. The link has been kept as is for now.
