@@ -1,6 +1,8 @@
 .clinerules
 node_modules
 
+General Information.txt
+
 # Logs
 logs
 *.log
