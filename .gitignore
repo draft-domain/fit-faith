@@ -2,6 +2,11 @@
 node_modules
 
 General Information.txt
+lighthouserc.json
+package-lock.json
+PLANNING.md
+README.md
+TASK.md
 
 # Logs
 logs
