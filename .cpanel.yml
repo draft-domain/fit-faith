@@ -1,11 +1,6 @@
 deployment:
   tasks:
     - /bin/mkdir -p /home/fitfaith/public_html
-    - /bin/rsync -av --delete \
-        --exclude='.git*' \
-        --exclude='.github/' \
-        --exclude='*.md' \
-        ./ /home/fitfaith/public_html/
-    # Fix ownership and permissions every deploy
-    - /bin/find /home/fitfaith/public_html -type d -exec chmod 755 {} \;
+    - /bin/rsync -av --delete --exclude='.git*' --exclude='.github/' --exclude='*.md' ./ /home/fitfaith/public_html/
+    - /bin/chmod -R 755 /home/fitfaith/public_html
     - /bin/find /home/fitfaith/public_html -type f -exec chmod 644 {} \;
