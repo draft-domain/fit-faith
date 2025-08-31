@@ -1,18 +1,4 @@
-# Deploy static site files to public_html
 deployment:
   tasks:
-    - echo "Deploying Fit Faith static site"
-    - mkdir -p /home/fitfaith/public_html
-    - rsync -av --delete \
-        ./index.html \
-        ./assets \
-        ./apple-touch-icon.png \
-        ./favicon-16x16.png \
-        ./favicon-32x32.png \
-        ./android-chrome-192x192.png \
-        ./android-chrome-512x512.png \
-        ./site.webmanifest \
-        ./safari-pinned-tab.svg \
-        ./mstile-150x150.png \
-        ./browserconfig.xml \
-        /home/fitfaith/public_html/
+    - /bin/mkdir -p /home/fitfaith/public_html
+    - /bin/rsync -av --delete --exclude='.git*' --exclude='.github/' --exclude='*.md' ./ /home/fitfaith/public_html/
