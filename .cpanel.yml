@@ -1,0 +1,24 @@
+# Deploy only the site to public_html
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fitfaith/public_html
+
+    # Make sure the docroot exists
+    - mkdir -p "$DEPLOYPATH"
+
+    # Mirror a whitelist of files/folders (rsync is available on cPanel)
+    - rsync -av --delete --prune-empty-dirs \
+        --include='/index.html' \
+        --include='/assets/***' \
+        --include='/*.ico' \
+        --include='/apple-touch-icon.png' \
+        --include='/site.webmanifest' \
+        --include='/favicon-16x16.png' \
+        --include='/favicon-32x32.png' \
+        --include='/android-chrome-192x192.png' \
+        --include='/android-chrome-512x512.png' \
+        --include='/safari-pinned-tab.svg' \
+        --include='/mstile-150x150.png' \
+        --include='/browserconfig.xml' \
+        --exclude='*' \
+        ./ "$DEPLOYPATH"
